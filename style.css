@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(24, 23, 23, 0.979);
+}
+
+.card{
+    background: hsla(256, 100%, 74%, 1);
+
+    background: linear-gradient(135deg, hsla(256, 100%, 74%, 1) 19%, hsla(180, 87%, 64%, 1) 79%);
+
+    background: -moz-linear-gradient(135deg, hsla(256, 100%, 74%, 1) 19%, hsla(180, 87%, 64%, 1) 79%);
+
+    background: -webkit-linear-gradient(135deg, hsla(256, 100%, 74%, 1) 19%, hsla(180, 87%, 64%, 1) 79%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9E7AFF", endColorstr="#51F3F3", GradientType=1 );
+
+
+    margin-top: 120px;
+    width: 270px;
+    padding: 20px;
+    border-radius: 20px;
+    overflow-x: hidden;
+}
+
+.card .search-city{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .search-city .search-box{
+    width: 82%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.card .search-city .search-box .search{
+    width: 100%;
+    border: 0;
+    padding: 10px 12px;
+    border-radius: 20px;
+}
+
+.card .search-city .search-box .search:focus{
+    outline: none;
+}
+
+.card .search-city .search-icon{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(112, 110, 110);
+}
+
+.card .weather-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .7s;
+}
+
+.card .weather-details .weather-image{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.card .weather-details .weather-image img{
+    height: 110px;
+}
+
+.card .weather-details .city-temp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.card .weather-details .city-temp h1{
+    font-size: 40px;
+}
+
+.card .weather-details .city-temp h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.card .weather-details .more-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 6px;
+}
+
+
+.card .weather-details .more-details .symbol img{
+    height: 30px;
+}
+
+.card .weather-details .more-details .humidity,
+.card .weather-details .more-details .wind-speed{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+
+
